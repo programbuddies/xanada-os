@@ -1,3 +1,4 @@
+REM Excluding this line, this code has 10674 characters.
 @echo OFF
 color 3B
 
