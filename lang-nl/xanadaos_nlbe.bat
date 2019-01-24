@@ -46,7 +46,7 @@ exit
 :desktop1
 cls
 color 3B
-echo Welkom bij the desktop. What do you want to do?
+echo Welkom bij the desktop. Wat w?
 echo 1) Rekenmachine
 echo 2) Kalender
 echo 3) Browser
@@ -239,7 +239,7 @@ goto memorystart
 cls
 echo 1) Afsluiten
 echo 2) Herstarten
-echo 3) Antivirus
+echo 3) Antivirus (GRAP)
 echo 4) Notitie
 echo 5) Bekijk notitie
 echo 6) Terug
@@ -292,6 +292,7 @@ goto login
 :antivirus1
 cls
 echo Welkom bij XANADA Antivirus
+echo OPGELET! DIT IS EEN GRAP! NEEM DIT NIET SERIEUS!!!!!!!!!!!!!!!!!!!
 if exist virus.exe goto antivirusvirus
 if Not exist virus.exe goto antivirusnone
 
@@ -334,7 +335,7 @@ goto desktop1
 
 :viewwrite1
 cls
-echo Welkom bij Notitie Bekijken!
+echo Welkom bij Notitie.
 echo Je notities:
 echo 1) %filename%
 echo Wil je je notitie bekijken?
@@ -372,7 +373,7 @@ goto desktop3
 
 :quiz
 cls
-echo OK dan, eerste vraag. Hoeveel lander zijn er in het Verenigd Koninkrijk?
+echo OK dan, eerste vraag. Hoeveel landen zijn er in het Verenigd Koninkrijk?
 set /p choice12=C:\
 
 if %choice12% == 3 goto quizanswerright
@@ -432,8 +433,8 @@ goto zombiefight
 :punch
 echo Je gebruikt Boksen!
 echo Zombie gebruikt Bijt!
-echo Uw paardenkracht is Nu: 7
-echo Zombie's paardenkracht is Nu: 3
+echo Uw HP is Nu: 7
+echo Zombie's HP is Nu: 3
 echo Wat ga je doen?
 echo 1) Stampen
 set /p choice16=C:\
@@ -444,8 +445,8 @@ goto punch
 :kick
 echo Jij gebruikt Stampen!
 echo Zombie gebruikt Bijt!
-echo Uw paardenkracht is Nu: 7
-echo Zombie's paardenkracht is Nu: 5
+echo Uw HP is Nu: 7
+echo Zombie's HP is Nu: 5
 echo Wat ga je doen?
 echo 1) Boksen
 set /p choice17=C:\
