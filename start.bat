@@ -32,10 +32,11 @@ start xanadaos_enuk
 
 :nl
 cls
-echo 1) Belgie
+echo 1) Belgie en Nederland
 set /p nl=C:\
 
 if %nl% == 1 goto nlbe
+goto nl
 
 :nlbe
 cls
