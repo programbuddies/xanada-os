@@ -36,9 +36,20 @@ echo 1) Belgie en Nederland
 set /p nl=C:\
 
 if %nl% == 1 goto nlbe
+if %nl% == s goto nlbe_safe
+if %nl% == S goto nlbe_safe
+if %nl% == safe goto nlbe_safe
+if %nl% == Safe goto nlbe_safe
+if %nl% == school goto nlbe_safe
+if %nl% == School goto nlbe_safe
 goto nl
 
 :nlbe
 cls
 cd lang-nl
 start xanadaos_nlbe
+
+:nlbe_safe
+cls
+cd lang-nl
+start xanadaos_nlbe_safe
