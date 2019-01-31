@@ -63,7 +63,7 @@ goto desktop1
 
 :calculator
 cls
-echo Welkom bij Rekenmachine! Alleen een 32-Bit basis.
+echo Welkom bij Rekenmachine! Alleen maar tot 4294967295
 echo Druk 1 voor Additie
 echo Druk 2 voor Subtractie
 echo Druk 3 voor Multiplicatie
