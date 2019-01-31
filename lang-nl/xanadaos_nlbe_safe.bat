@@ -46,7 +46,7 @@ exit
 :desktop1
 cls
 color 3B
-echo Welkom bij the desktop. Wat w?
+echo Welkom bij the desktop. Wat wil je doen?
 echo 1) Rekenmachine
 echo 2) Kalender
 echo 3) Browser
