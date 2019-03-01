@@ -11,7 +11,7 @@ echo 1) Ja
 echo 2) Nee
 set /p login0=C:\
 
-if %login0% == 1 goto name
+if %login0% == 1 goto desktop1
 if %login0% == 2 goto savecheck
 goto login
 
