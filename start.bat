@@ -19,6 +19,8 @@ set /p en=C:\
 
 if %en% == 1 goto enus
 if %en% == 2 goto enuk
+if %en% == 1S goto enusS
+if %en% == 2S goto enukS
 goto en
 
 :enus
@@ -30,18 +32,22 @@ start xanadaos_enus
 cd lang-en
 start xanadaos_enuk
 
+:enusS
+cls
+cd lang-en
+start xanadaos_enus_safe
+
+:enukS
+cd lang-en
+start xanadaos_enuk_safe
+
 :nl
 cls
-echo 1) Belgie en Nederland
+echo 1) Belgie
 set /p nl=C:\
 
 if %nl% == 1 goto nlbe
-if %nl% == s goto nlbe_safe
-if %nl% == S goto nlbe_safe
-if %nl% == safe goto nlbe_safe
-if %nl% == Safe goto nlbe_safe
-if %nl% == school goto nlbe_safe
-if %nl% == School goto nlbe_safe
+if %nl% == 1S goto nlbe_safe
 goto nl
 
 :nlbe
