@@ -428,17 +428,17 @@ goto matrix
 :desktop4
 cls
 echo 1) Open Apps
-echo 4) Bugs
-echo 5) Drawings
-echo 6) Go back
-echo 7) More
+echo 2) Bugs
+echo 3) Drawings
+echo 4) Go back
+echo 5) More
 set /p choice18=C:\
 
 if %choice18% == 1 goto openapps
-if %choice18% == 4 goto buglog
-if %choice18% == 5 goto drawings
-if %choice18% == 6 goto desktop3
-if %choice18% == 7 goto desktop5
+if %choice18% == 2 goto buglog
+if %choice18% == 3 goto drawings
+if %choice18% == 4 goto desktop3
+if %choice18% == 5 goto desktop5
 goto desktop4
 
 :openapps
@@ -474,11 +474,10 @@ goto drawings
 cls
 echo    /\
 echo   /()\
-echo  |̅̅̅̅    |
-echo  | [] |
 echo  |    |
-echo  | |͞͞|
-echo  | |- |
+echo  | [] |
+echo  | .__|
+echo  |.|- |
 echo  |_|__|
 pause
 goto drawings
